@@ -3,12 +3,12 @@
   import ThemeSwitcher from "./ThemeSwitcher.svelte";
   import initAPEXlang from "./initAPEXlang";
 
-  window.v3 = "24.1.3";
+  window.v3 = "24.2.4";
   window.v2 = v3.split(".").slice(0, 2).join(".");
   window.applyVersion = (url) => {
     return url.replace(/#v3#/g, window.v3).replace(/#v2#/g, window.v2);
   };
-  window.faVersion = "2.3";
+  window.faVersion = "2.4";
 
   window.theme = sessionStorage.getItem("theme") || themes[0].name;
   window.themeSrc = themes
